@@ -1,0 +1,47 @@
+{
+  "name": "frontend-dynamic-content",
+  "homepage": "https://github.com/JokeCam/frontend-dynamic-content",
+  "version": "1.0.0",
+  "description": "Dynamic Content Project",
+  "main": "./src/index.js",
+  "dependencies": {
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "classnames": "^2.3.1",
+    "gh-pages": "^3.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "webpack-dev-server --mode development --hot --open",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "less-loader": "^10.2.0",
+    "style-loader": "^3.3.1",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JokeCam/frontend-dynamic-content.git"
+  },
+  "keywords": [
+    "dynamic",
+    "content",
+    "web"
+  ],
+  "author": "Stanislau Sialiunin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JokeCam/frontend-dynamic-content/issues"
+  }
+}
