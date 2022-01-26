@@ -54,3 +54,5 @@ const Card = [
         description: "woof!"
     },
 ]
+
+export default Card
