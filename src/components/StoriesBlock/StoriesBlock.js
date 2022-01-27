@@ -1,22 +1,32 @@
-import { useEffect } from "react";
-import Stories from "../../api/Stories"
+import { useState, useEffect } from "react";
+import { service } from "./service/storiesService"
 import Story from "./Story/Story";
 
 import "./StoriesBlock.less";
 
 function StoriesBlock() {
+    const [stories, setStories] = useState([]);
 
     useEffect(() => {
+        getStories();
+    }, []);
 
-    })
+    async function getStories() {
+        const mockStories = await service();
+        setStories(mockStories);
+    };
+
+    function handleStoriesDisplay() {
+        return stories.map((elem) => {
+            return <Story data={elem} key={elem.avatar} />
+        })
+    }
 
     return (
         <div className="stories-block">
-                {
-                    Stories.map((elem) => {
-                        return <Story data={elem} key={elem.id} />
-                    })
-                }
+            {
+                handleStoriesDisplay()
+            }
         </div>
     );
 };

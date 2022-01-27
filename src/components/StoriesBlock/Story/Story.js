@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import "./Story.less"
 
 function Story(props) {
@@ -10,5 +12,10 @@ function Story(props) {
         </div>
     );
 }
+
+Story.propTypes = {
+    data: PropTypes.object.isRequired
+};
+
 
 export default Story;
