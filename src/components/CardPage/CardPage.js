@@ -1,15 +1,31 @@
 import Card from "./Card/Card";
-import Cards from "../../api/Cards"
+import { service } from "./service/cardsService";
+import { useState, useEffect } from "react";
 
 import "./CardPage.less";
 
 function CardPage() {
+    const [ cards, setCards ] = useState([]);
+
+    useEffect(() => {
+        getCards();
+    }, []);
+
+    async function getCards() {
+        const mockCards = await service();
+        setCards(mockCards);
+    };
+
+    function handleCardsDisplay() {
+        return cards.map((elem) => {
+            return <Card data={elem} key={elem.id}/>
+        })
+    }
+
     return (
         <div className="card-page">
             {
-                Cards.map((elem) => {
-                    return <Card data={elem} key={elem.id}/>
-                })
+                handleCardsDisplay()
             }
         </div>
     );

@@ -31,11 +31,13 @@ const Stories = [
     },
     {
         name: "Cuphead",
+        avatar: "https://static.wikia.nocookie.net/cuphead/images/f/fb/Cup_Idle.png/revision/latest/scale-to-width-down/250?cb=20210108145005&path-prefix=ru",
         avatar: "https://unity.com/sites/default/files/styles/16_9_m_scale_width/public/article/01-ImageRight.jpg?itok=XF4tsg9T",
         id: 74281949,
     },
     {
         name: "Mugman",
+        avatar: "https://static.wikia.nocookie.net/cuphead/images/9/9e/Mugman_results.png/revision/latest?cb=20201128172957&path-prefix=ru",
         avatar: "https://www.seekpng.com/png/detail/15-157910_heres-what-mugman-looks-like-without-a-nose.png",
     },
     {

@@ -1,4 +1,6 @@
-import "./Card.less"
+import PropTypes from "prop-types";
+
+import "./Card.less";
 
 function Card(props) {
     return (
@@ -17,9 +19,12 @@ function Card(props) {
                 <p className="card__name">{props.data.name}</p>
                 <p className="card__caption">{props.data.description}</p>
             </div>
-
         </div>
     );
 }
+
+Card.propTypes = {
+    data: PropTypes.object.isRequired
+};
 
 export default Card;
