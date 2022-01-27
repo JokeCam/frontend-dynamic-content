@@ -1,17 +1,24 @@
-import "./StoriesBlock.less"
-import Story from "./Story/Story"
+import { useEffect } from "react";
+import Stories from "../../api/Stories"
+import Story from "./Story/Story";
+
+import "./StoriesBlock.less";
 
 function StoriesBlock() {
+
+    useEffect(() => {
+
+    })
+
     return (
         <div className="stories-block">
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
+                {
+                    Stories.map((elem) => {
+                        return <Story data={elem} key={elem.id} />
+                    })
+                }
         </div>
     );
-}
+};
 
 export default StoriesBlock;
