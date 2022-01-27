@@ -1,3 +1,58 @@
 .card {
-    
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    border: 1px solid black;
+    padding: 10px 0;
+
+    &__info-container {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__avatar-container {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__avatar {
+        min-height: 120%;
+    }
+
+    &__name {
+        font-family: NotoSans-Bold, apple-system, BlinkMacSystemFont, sans-serif;
+        margin: 0;
+    }
+
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        max-width: 400px;
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    &__image {
+        min-height: 120%;
+    }
+
+    &__likes {
+        margin: 5px 0;
+    }
+
+    &__caption-container {
+        display: flex;
+        column-gap: 10px;
+        padding-top: 10px;
+    }
+
+    &__caption {
+        margin: 0;
+    }
 }
