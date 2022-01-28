@@ -12,8 +12,8 @@ function CardPage() {
     }, []);
 
     async function getCards() {
-        const mockCards = await service();
-        setCards(mockCards);
+        const fetchedCards = await service.fetchCards();
+        setCards(fetchedCards);
     };
 
     function handleCardsDisplay() {

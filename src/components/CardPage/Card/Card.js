@@ -24,7 +24,14 @@ function Card(props) {
 }
 
 Card.propTypes = {
-    data: PropTypes.object.isRequired
+    data: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+        avatar: PropTypes.string.isRequired,
+        likes: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        id: PropTypes.number.isRequired,
+    }).isRequired
 };
 
 export default Card;

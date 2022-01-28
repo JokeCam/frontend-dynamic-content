@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import "./Story.less"
+import "./Story.less";
 
 function Story(props) {
     return (
@@ -11,11 +11,14 @@ function Story(props) {
             <p className="story__name">{props.data.name}</p>
         </div>
     );
-}
-
-Story.propTypes = {
-    data: PropTypes.object.isRequired
 };
 
+Story.propTypes = {
+    data: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        avatar: PropTypes.string.isRequired,
+        id: PropTypes.number.isRequired,
+    }).isRequired
+};
 
 export default Story;
