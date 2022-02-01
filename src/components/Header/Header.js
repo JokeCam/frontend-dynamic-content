@@ -27,19 +27,19 @@ function Header() {
 
     function handleHomeClick() {
         if (isHomeButtonActive) {
-            setIsHomeButtonActive(false)
+            setIsHomeButtonActive(false);
         } else {
-            setIsProfileButtonActive(false)
-            setIsHomeButtonActive(true)
+            setIsProfileButtonActive(false);
+            setIsHomeButtonActive(true);
         };
     };
 
     function handleProfileClick() {
         if (isProfileButtonActive) {
-            setIsProfileButtonActive(false)
+            setIsProfileButtonActive(false);
         } else {
-            setIsHomeButtonActive(false)
-            setIsProfileButtonActive(true)
+            setIsHomeButtonActive(false);
+            setIsProfileButtonActive(true);
         };
     };
 
