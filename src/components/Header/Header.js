@@ -2,7 +2,7 @@ import classnames from "classnames";
 import { useState, useContext } from "react";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
-import "./Header.less"
+import "./Header.less";
 
 function Header() {
     const [isHomeButtonActive, setIsHomeButtonActive] = useState(false);
