@@ -1,0 +1,32 @@
+{
+    "name": "Stanislav",
+    "avatar": "https://ak.picdn.net/shutterstock/videos/1013501468/thumb/1.jpg?ip=x480",
+    "id": 9231905123132,
+    "about": "Hello world",
+    "posts": [
+        {
+            "image": "https://pbs.twimg.com/media/EGtD5DwX0AEnB9E?format=png&name=small",
+            "likes": "69",
+            "description": "Just enjoying life",
+            "id": 3581894128
+        },
+        {
+            "image": "https://i.redd.it/eyerw3sxese81.jpg",
+            "likes": "14142414",
+            "description": "I guess I’ll walk…",
+            "id": 3581894132
+        },
+        {
+            "image": "https://i.redd.it/85x200p6wxe81.png",
+            "likes": "432",
+            "description": "Humor or horror?",
+            "id": 3584221314
+        },
+        {
+            "image": "https://i.redd.it/rk27goafk7e81.jpg",
+            "likes": "13123",
+            "description": "Ok, this is dumb",
+            "id": 3581421412
+        }
+    ]
+}
