@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     fetchUser();
-  });
+  }, []);
 
   async function fetchUser() {
     const fetchedCurrentUser = await service.fetchCurrentUser();
