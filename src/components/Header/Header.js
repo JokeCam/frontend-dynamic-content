@@ -6,7 +6,7 @@ import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 import "./Header.less";
 
 function Header() {
-    const [isHomeButtonActive, setIsHomeButtonActive] = useState(false);
+    const [isHomeButtonActive, setIsHomeButtonActive] = useState(true);
     const [isProfileButtonActive, setIsProfileButtonActive] = useState(false);
     const userContext = useContext(CurrentUserContext);
 

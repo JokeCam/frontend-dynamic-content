@@ -5,6 +5,11 @@
         "avatar": "https://www.soyuz.ru/public/uploads/files/2/7113247/20170810090017e9ea62cca9.jpg",
         "likes": "3",
         "description": "...",
+        "tags": [
+            "test",
+            "hello-world",
+            "mynameisRyan"
+        ],
         "id": 7328727878
     },
     {
@@ -13,6 +18,13 @@
         "avatar": "https://cdnn11.img.sputnik.by/img/07e4/0c/0e/1046390441_181:0:917:809_1920x0_80_0_0_4f2670a268da0bda918ec2340cf6989e.png",
         "likes": "1643",
         "description": "What the f*8ck is this??????",
+        "tags": [
+            "shrek1",
+            "shrek2",
+            "shrekislove",
+            "shrekislife",
+            "mynameisShrek"
+        ],
         "id": 4874128974
     },
     {
@@ -21,6 +33,11 @@
         "avatar": "https://ak.picdn.net/shutterstock/videos/1013501468/thumb/1.jpg?ip=x480",
         "likes": "69",
         "description": "Just enjoying life",
+        "tags": [
+            "chill",
+            "memes",
+            ":)"
+        ],
         "id": 3581894128
     },
     {
@@ -29,6 +46,13 @@
         "avatar": "https://i.imgflip.com/1fykpi.jpg",
         "likes": "6849032976894738793",
         "description": "woof!",
+        "tags": [
+            "imadog",
+            "woof",
+            "woof",
+            "woof",
+            "woof"
+        ],
         "id": 1894891287
     },
     {
@@ -37,6 +61,13 @@
         "avatar": "https://i.imgflip.com/1fykpi.jpg",
         "likes": "6849032976894738793",
         "description": "woof!",
+        "tags": [
+            "imadog",
+            "woof",
+            "woof",
+            "woof",
+            "woof"
+        ],
         "id": 8412789428
     },
     {
@@ -45,6 +76,13 @@
         "avatar": "https://i.imgflip.com/1fykpi.jpg",
         "likes": "6849032976894738793",
         "description": "woof!",
+        "tags": [
+            "imadog",
+            "woof",
+            "woof",
+            "woof",
+            "woof"
+        ],
         "id": 4214984589
     },
     {
@@ -53,6 +91,13 @@
         "avatar": "https://i.imgflip.com/1fykpi.jpg",
         "likes": "6849032976894738793",
         "description": "woof!",
+        "tags": [
+            "imadog",
+            "woof",
+            "woof",
+            "woof",
+            "woof"
+        ],
         "id": 4182497809
     },
     {
@@ -61,6 +106,13 @@
         "avatar": "https://i.imgflip.com/1fykpi.jpg",
         "likes": "6849032976894738793",
         "description": "woof!",
+        "tags": [
+            "imadog",
+            "woof",
+            "woof",
+            "woof",
+            "woof"
+        ],
         "id": 7897481784
     },
     {
@@ -69,6 +121,13 @@
         "avatar": "https://i.imgflip.com/1fykpi.jpg",
         "likes": "6849032976894738793",
         "description": "woof!",
+        "tags": [
+            "imadog",
+            "woof",
+            "woof",
+            "woof",
+            "woof"
+        ],
         "id": 2810849410
     }
 ]
