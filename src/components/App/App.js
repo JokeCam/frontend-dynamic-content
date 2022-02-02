@@ -2,9 +2,10 @@ import { service } from "./service/service";
 import { useEffect, useState } from "react";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
+import Header from "../Header/Header";
+import Profile from "../Profile/Profile";
 import StoriesBlock from "../StoriesBlock/StoriesBlock";
 import CardPage from "../CardPage/CardPage";
-import Header from "../Header/Header";
 
 import "./App.less";
 
@@ -25,8 +26,9 @@ function App() {
     <div className="app">
       <CurrentUserContext.Provider value={currentUser}>
         <Header />
-        <StoriesBlock />
-        <CardPage />
+        <Profile />
+        {/* <StoriesBlock />
+        <CardPage /> */}
       </CurrentUserContext.Provider>
     </div>
   );
