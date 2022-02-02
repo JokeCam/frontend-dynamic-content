@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import { service } from "./service/service";
 import { useEffect, useState } from "react";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
@@ -26,9 +27,19 @@ function App() {
     <div className="app">
       <CurrentUserContext.Provider value={currentUser}>
         <Header />
-        <Profile />
-        {/* <StoriesBlock />
-        <CardPage /> */}
+        <Routes>
+          <Route path="/" element={
+            <>
+              <StoriesBlock />
+              <CardPage />
+            </>
+          }
+          />
+          <Route path="profile" element={
+            <Profile />
+          }
+          />
+        </Routes>
       </CurrentUserContext.Provider>
     </div>
   );
