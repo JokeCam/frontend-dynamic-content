@@ -34,11 +34,39 @@
         "likes": "69",
         "description": "Just enjoying life",
         "tags": [
-            "chill",
+            "bruh",
             "memes",
             ":)"
         ],
         "id": 3581894128
+    },
+    {
+        "name": "Sonic The Hedgehog",
+        "image": "https://dx35vtwkllhj9.cloudfront.net/paramountpictures/sonic-the-hedgehog-2/images/regions/us/onesheet.jpg",
+        "avatar": "https://yt3.ggpht.com/ytc/AKedOLQJCe9G7eXi7FxI0ApC4woWQPVDGlhcK6kPA1USJw=s900-c-k-c0x00ffffff-no-rj",
+        "likes": "412125",
+        "description": "Fun fact: I've commited many warcrimes nobody even knows about!",
+        "tags": [
+            "Sonic",
+            "Bluehedgehog",
+            "Sonic2TheMovie",
+            "BringBackSonic"
+        ],
+        "id": 3581894855
+    },
+    {
+        "name": "Tails",
+        "image": "https://cdn.vox-cdn.com/thumbor/JWTfewlQZFZzz1_zed6zkNR91WU=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23071230/tails_movie.jpeg",
+        "avatar": "https://i.pinimg.com/originals/c8/af/8b/c8af8b5b37ae04e39f74441ff053d8a0.jpg",
+        "likes": "2",
+        "description": "Guys! I'm starring in a new Sonic 2 movie!!! Also: Sonic says he hates Jews?!",
+        "tags": [
+            "Sonic",
+            "Tails",
+            "SonicAndTails",
+            "YellowFurryDude"
+        ],
+        "id": 3581894872
     },
     {
         "name": "Dmitriy",
