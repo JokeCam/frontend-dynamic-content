@@ -23,13 +23,13 @@ function CardPage() {
             if(searchInputValue[0] === "#") {
                 const tagsArr = elem.tags.filter((tag) => {
 
-                    return tag.includes(searchInputValue.slice(1));
+                    return tag.toLowerCase().includes(searchInputValue.slice(1).toLowerCase());
                 });
 
                 return tagsArr.length > 0;
             } else {
 
-                return elem.description.includes(searchInputValue);
+                return elem.description.toLowerCase().includes(searchInputValue.toLowerCase());
             };
         });
 
