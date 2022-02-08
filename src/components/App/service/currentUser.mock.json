@@ -7,24 +7,48 @@
         {
             "image": "https://pbs.twimg.com/media/EGtD5DwX0AEnB9E?format=png&name=small",
             "likes": "69",
+            "comments": [
+                "yo",
+                "123",
+                "123",
+                "yo",
+                "yikes"
+            ],
             "description": "Just enjoying life",
             "id": 3581894128
         },
         {
             "image": "https://i.redd.it/eyerw3sxese81.jpg",
             "likes": "14142414",
+            "comments": [
+                "yo",
+                "123",
+                "chick fillet"
+            ],
             "description": "I guess I’ll walk…",
             "id": 3581894132
         },
         {
             "image": "https://i.redd.it/85x200p6wxe81.png",
             "likes": "432",
+            "comments": [
+                "ye",
+                "west"
+            ],
             "description": "Humor or horror?",
             "id": 3584221314
         },
         {
             "image": "https://i.redd.it/rk27goafk7e81.jpg",
             "likes": "13123",
+            "comments": [
+                "yo",
+                "this is fire",
+                "lol",
+                "lmao",
+                "yayayayayayayay",
+                "yeeyeyeyeyeyeyyeey"
+            ],
             "description": "Ok, this is dumb",
             "id": 3581421412
         }
