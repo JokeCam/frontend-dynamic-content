@@ -1,4 +1,5 @@
 import classnames from "classnames";
+import { Link } from "react-router-dom";
 import { useState, useContext } from "react";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
@@ -26,18 +27,14 @@ function Header() {
     );
 
     function handleHomeClick() {
-        if (isHomeButtonActive) {
-            setIsHomeButtonActive(false);
-        } else {
+        if (!isHomeButtonActive) {
             setIsProfileButtonActive(false);
             setIsHomeButtonActive(true);
         };
     };
 
     function handleProfileClick() {
-        if (isProfileButtonActive) {
-            setIsProfileButtonActive(false);
-        } else {
+        if (!isProfileButtonActive) {
             setIsHomeButtonActive(false);
             setIsProfileButtonActive(true);
         };
@@ -47,10 +44,14 @@ function Header() {
         <header className="header">
             <h1 className="header__title">NotTheInstagram</h1>
             <div className="header__menu">
-                <button onClick={handleHomeClick} className={homeButtonClass}></button>
-                <button onClick={handleProfileClick} className={profileButtonClass}>
-                    <img className="header__menu-button-image" src={userContext.avatar} />
-                </button>
+                <Link to="/">
+                    <button onClick={handleHomeClick} className={homeButtonClass}></button>
+                </Link>
+                <Link to="/profile">
+                    <button onClick={handleProfileClick} className={profileButtonClass}>
+                        <img className="header__menu-button-image" src={userContext.avatar} />
+                    </button>
+                </Link>
             </div>
         </header>
     );

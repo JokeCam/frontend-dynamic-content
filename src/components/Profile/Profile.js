@@ -8,10 +8,7 @@ import "./Profile.less";
 function Profile() {
     const userContext = useContext(CurrentUserContext);
 
-    console.log(userContext);
-
     function handlePostsDisplay() {
-        console.log(userContext)
         return userContext.posts?.map((elem) => {
             return <Post data={elem} key={elem.id} />
         });
