@@ -20,13 +20,13 @@ function SearchBar(props) {
         };
     }, [props.searchInputValue]);
 
-    function handleInputChange(evt) {
-        evt.preventDefault();
-        props.setSearchInputValue(evt.target.value);
+    function handleInputChange(event) {
+        event.preventDefault();
+        props.setSearchInputValue(event.target.value);
     };
 
-    function handleButtonClick(evt) {
-        evt.preventDefault();
+    function handleButtonClick(event) {
+        event.preventDefault();
         props.setSearchInputValue("");
     };
 

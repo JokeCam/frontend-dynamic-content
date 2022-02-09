@@ -20,7 +20,7 @@ function Card(props) {
                 <p className="card__caption">{props.data.description}</p>
                 <div className="card__tags-container">
                     {
-                        props.data.tags.map((tag, index) => {
+                        props.tags.map((tag, index) => {
                             return <p className="card__tag" key={index}>#{tag}</p>
                         })
                     }
