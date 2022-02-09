@@ -9,7 +9,7 @@
 
     &__overlay {
         z-index: 10;
-        display: none;
+        display: flex;
         position: absolute;
         width: 300px;
         height: 300px;
@@ -17,9 +17,11 @@
         justify-content: center;
         align-items: center;
         column-gap: 30px;
+        opacity: 0;
+        background-color: @black-transparent;
 
-        &_displayed {
-            display: flex;
+        &:hover {
+            opacity: 1;
         }
     }
 
