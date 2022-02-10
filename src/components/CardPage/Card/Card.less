@@ -1,3 +1,5 @@
+@import url("../../../common/color.less");
+
 .card {
     display: flex;
     flex-direction: column;
@@ -39,7 +41,8 @@
     }
 
     &__image {
-        object-fit: cover;
+        object-fit: contain;
+        background-color: @black;
     }
 
     &__likes {
