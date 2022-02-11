@@ -1,14 +1,27 @@
 import classnames from "classnames";
-import { Link } from "react-router-dom";
-import { useState, useContext } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useContext, useEffect } from "react";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
 import "./Header.less";
 
 function Header() {
-    const [isHomeButtonActive, setIsHomeButtonActive] = useState(true);
+    const [isHomeButtonActive, setIsHomeButtonActive] = useState(false);
     const [isProfileButtonActive, setIsProfileButtonActive] = useState(false);
     const userContext = useContext(CurrentUserContext);
+    const location = useLocation(); 
+
+    useEffect(() => {
+        switch(location.pathname) {
+            case "/profile":
+            setIsProfileButtonActive(true);
+            break;
+
+            default:
+            setIsHomeButtonActive(true);
+            break;
+        }
+    })
 
     const homeButtonClass = classnames(
         "header__menu-button",
