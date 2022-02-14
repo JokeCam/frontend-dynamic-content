@@ -10,7 +10,13 @@ function Profile() {
 
     function handlePostsDisplay() {
         return userContext.posts?.map((elem) => {
-            return <Post data={elem} key={elem.id} />
+            
+            return <Post
+                key={elem.id}
+                image={elem.image}
+                likes={elem.likes.length}
+                comments={elem.comments.length}
+            />
         });
     };
 
@@ -18,7 +24,7 @@ function Profile() {
         <div className="profile">
             <div className="profile__main-container">
                 <div className="profile__avatar-container">
-                    <img className="profile__avatar" src={userContext.avatar}/>
+                    <img className="profile__avatar" src={userContext.avatar} />
                 </div>
                 <div className="profile__info-container">
                     <h2 className="profile__name">{userContext.name}</h2>
