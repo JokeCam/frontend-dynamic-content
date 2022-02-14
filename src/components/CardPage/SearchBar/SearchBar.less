@@ -1,0 +1,53 @@
+@import url("../../../common/color.less");
+
+.search-bar {
+    min-width: 500px;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: @light-grey;
+    position: relative;
+
+    &__search-icon {
+        position: absolute;
+        left: 14px;
+        width: 23px;
+        height: 23px;
+        background-image: url("../../../images/search-bar-search-icon.svg");
+        background-repeat: no-repeat;
+    }
+
+    &__input {
+        min-width: 80.5%;
+        outline: none;
+        padding: 0;
+        border: none;
+        padding: 0 48px;
+        background-color: transparent;
+    }
+    
+    &__button {
+        display: none;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../../images/search-bar-cancel.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        outline: none;
+        padding: 0;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &_displayed {
+            display: block;
+        }
+    }
+}

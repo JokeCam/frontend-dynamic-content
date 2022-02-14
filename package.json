@@ -1,6 +1,6 @@
 {
   "name": "frontend-dynamic-content",
-  "homepage": "https://github.com/JokeCam/frontend-dynamic-content",
+  "homepage": "https://github.com/JokeCam/frontend-dynamic-content/",
   "version": "1.0.0",
   "description": "Dynamic Content Project",
   "main": "./src/index.js",
