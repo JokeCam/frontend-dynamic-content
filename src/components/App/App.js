@@ -1,14 +1,16 @@
-import { Routes, Route } from "react-router-dom";
-import { service } from "./service/service";
-import { useEffect, useState } from "react";
-import { CurrentUserContext } from "../../contexts/CurrentUserContext";
+import React from 'react';
 
-import Header from "../Header/Header";
-import Profile from "../Profile/Profile";
-import StoriesBlock from "../StoriesBlock/StoriesBlock";
-import CardPage from "../CardPage/CardPage";
+import {Routes, Route} from 'react-router-dom';
+import {service} from './service/service';
+import {useEffect, useState} from 'react';
+import {CurrentUserContext} from '../../contexts/CurrentUserContext';
 
-import "./App.less";
+import Header from '../Header/Header';
+import Profile from '../Profile/Profile';
+// import StoriesBlock from '../StoriesBlock/StoriesBlock';
+import CardPage from '../CardPage/CardPage';
+
+import './App.less';
 
 
 function App() {
