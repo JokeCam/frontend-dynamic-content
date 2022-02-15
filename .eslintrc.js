@@ -17,5 +17,6 @@ module.exports = {
     "require-jsdoc": 0,
     quotes: [2, "double", { avoidEscape: true }],
     "object-curly-spacing": 0,
+    semi: "error",
   },
 };
