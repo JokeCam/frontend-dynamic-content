@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 
-import SearchBar from "./SearchBar/SearchBar";
-import Card from "./Card/Card";
-import { service } from "./service/cardsService";
-import { useState, useEffect } from "react";
+import SearchBar from './SearchBar/SearchBar';
+import Card from './Card/Card';
+import { service } from './service/cardsService';
+import { useState, useEffect } from 'react';
 
-import "./CardPage.less";
+import './CardPage.less';
 
 function CardPage() {
   const [cards, setCards] = useState([]);
   const [displayedCards, setDisplayedCards] = useState([]);
-  const [searchInputValue, setSearchInputValue] = useState("");
+  const [searchInputValue, setSearchInputValue] = useState('');
 
   useEffect(() => {
     getCards();
@@ -22,7 +22,7 @@ function CardPage() {
     }
 
     const filteredCards = cards.filter((elem) => {
-      if (searchInputValue[0] === "#") {
+      if (searchInputValue[0] === '#') {
         const tagsArr = elem.tags.filter((tag) => {
           return tag
             .toLowerCase()

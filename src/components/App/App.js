@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 
-import { Routes, Route } from "react-router-dom";
-import { service } from "./service/service";
-import { useEffect, useState } from "react";
-import { CurrentUserContext } from "../../contexts/CurrentUserContext";
+import { Routes, Route } from 'react-router-dom';
+import { service } from './service/service';
+import { useEffect, useState } from 'react';
+import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 
-import Header from "../Header/Header";
-import Profile from "../Profile/Profile";
+import Header from '../Header/Header';
+import Profile from '../Profile/Profile';
 // import StoriesBlock from '../StoriesBlock/StoriesBlock';
-import CardPage from "../CardPage/CardPage";
+import CardPage from '../CardPage/CardPage';
 
-import "./App.less";
+import './App.less';
 
 function App() {
   const [currentUser, setCurrentUser] = useState({});
