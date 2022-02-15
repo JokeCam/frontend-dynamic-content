@@ -13,6 +13,8 @@ import CardPage from '../CardPage/CardPage';
 import './App.less';
 
 function App() {
+  const a = '';
+
   const [currentUser, setCurrentUser] = useState({});
 
   useEffect(() => {
