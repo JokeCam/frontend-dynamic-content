@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { useEffect, useState } from "react/cjs/react.development";
-import classnames from "classnames";
-import "./SearchBar.less";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react/cjs/react.development';
+import classnames from 'classnames';
+import './SearchBar.less';
 
 function SearchBar(props) {
   const [isCancelButtonDisplayed, setIsCancelButtonDisplayed] = useState(false);
 
-  const cancelButtonClass = classnames("search-bar__button", {
-    "search-bar__button_displayed": isCancelButtonDisplayed,
+  const cancelButtonClass = classnames('search-bar__button', {
+    'search-bar__button_displayed': isCancelButtonDisplayed,
   });
 
   useEffect(() => {
@@ -26,7 +26,7 @@ function SearchBar(props) {
 
   function handleButtonClick(evt) {
     evt.preventDefault();
-    props.setSearchInputValue("");
+    props.setSearchInputValue('');
   }
 
   return (

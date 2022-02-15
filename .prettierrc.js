@@ -1,6 +1,6 @@
 module.exports = {
-  trailingComma: "es5",
+  trailingComma: 'es5',
   tabWidth: 2,
-  singleQuote: false,
-  endOfLine: "crlf",
+  singleQuote: true,
+  endOfLine: 'crlf',
 };
