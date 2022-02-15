@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useState, useEffect } from "react";
 import { service } from "./service/storiesService";
 import Story from "./Story/Story";
