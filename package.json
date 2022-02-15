@@ -20,9 +20,14 @@
     "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --mode development --hot --open",
     "build": "webpack --mode production",
-    "prettier": "npx prettier --write .",
-    "test": "npm run prettier",
-    "prepare": "husky install"
+    "format": "npx prettier --write .",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.16.10",
@@ -36,6 +41,7 @@
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "less-loader": "^10.2.0",
+    "lint-staged": "^12.3.4",
     "prettier": "2.5.1",
     "style-loader": "^3.3.1",
     "svg-inline-loader": "^0.8.2",
