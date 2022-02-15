@@ -5,30 +5,24 @@ import Story from "./Story/Story";
 import "./StoriesBlock.less";
 
 function StoriesBlock() {
-    const [stories, setStories] = useState([]);
+  const [stories, setStories] = useState([]);
 
-    useEffect(() => {
-        getStories();
-    }, []);
+  useEffect(() => {
+    getStories();
+  }, []);
 
-    async function getStories() {
-        const fetchedStories = await service.fetchStories();
-        setStories(fetchedStories);
-    };
+  async function getStories() {
+    const fetchedStories = await service.fetchStories();
+    setStories(fetchedStories);
+  }
 
-    function handleStoriesDisplay() {
-        return stories.map((elem) => {
-            return <Story data={elem} key={elem.avatar} />
-        })
-    };
+  function handleStoriesDisplay() {
+    return stories.map((elem) => {
+      return <Story data={elem} key={elem.avatar} />;
+    });
+  }
 
-    return (
-        <div className="stories-block">
-            {
-                handleStoriesDisplay()
-            }
-        </div>
-    );
-};
+  return <div className="stories-block">{handleStoriesDisplay()}</div>;
+}
 
 export default StoriesBlock;

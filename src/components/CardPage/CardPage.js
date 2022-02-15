@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import SearchBar from './SearchBar/SearchBar';
-import Card from './Card/Card';
-import {service} from './service/cardsService';
-import {useState, useEffect} from 'react';
+import SearchBar from "./SearchBar/SearchBar";
+import Card from "./Card/Card";
+import { service } from "./service/cardsService";
+import { useState, useEffect } from "react";
 
-import './CardPage.less';
+import "./CardPage.less";
 
 function CardPage() {
   const [cards, setCards] = useState([]);
   const [displayedCards, setDisplayedCards] = useState([]);
-  const [searchInputValue, setSearchInputValue] = useState('');
+  const [searchInputValue, setSearchInputValue] = useState("");
 
   useEffect(() => {
     getCards();
@@ -19,29 +19,22 @@ function CardPage() {
   useEffect(() => {
     if (!searchInputValue) {
       getCards();
-    };
+    }
 
     const filteredCards = cards.filter((elem) => {
-      if (searchInputValue[0] === '#') {
+      if (searchInputValue[0] === "#") {
         const tagsArr = elem.tags.filter((tag) => {
           return tag
-              .toLowerCase()
-              .includes(
-                  searchInputValue
-                      .slice(1)
-                      .toLowerCase(),
-              );
+            .toLowerCase()
+            .includes(searchInputValue.slice(1).toLowerCase());
         });
 
         return tagsArr.length > 0;
       } else {
-        return elem.description.
-            toLowerCase()
-            .includes(
-                searchInputValue
-                    .toLowerCase(),
-            );
-      };
+        return elem.description
+          .toLowerCase()
+          .includes(searchInputValue.toLowerCase());
+      }
     });
 
     setDisplayedCards(filteredCards);
@@ -51,13 +44,13 @@ function CardPage() {
     const fetchedCards = await service.fetchCards();
     setDisplayedCards(fetchedCards);
     setCards(fetchedCards);
-  };
+  }
 
   function handleCardsDisplay() {
     return displayedCards.map((elem) => {
       return <Card data={elem} key={elem.id} />;
     });
-  };
+  }
 
   return (
     <div className="card-page">
@@ -65,11 +58,9 @@ function CardPage() {
         searchInputValue={searchInputValue}
         setSearchInputValue={setSearchInputValue}
       />
-      {
-        handleCardsDisplay()
-      }
+      {handleCardsDisplay()}
     </div>
   );
-};
+}
 
 export default CardPage;

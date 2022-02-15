@@ -1,98 +1,65 @@
 [
-    {
-        "name": "Ryan",
-        "image": "https://screenqueens.files.wordpress.com/2018/08/big_1524267842_image.jpg",
-        "avatar": "https://www.soyuz.ru/public/uploads/files/2/7113247/20170810090017e9ea62cca9.jpg",
-        "likes": "3",
-        "description": "...",
-        "tags": [
-            "test",
-            "hello-world",
-            "mynameisRyan"
-        ],
-        "id": 7328727878
-    },
-    {
-        "name": "Shrek",
-        "image": "http://www.bryce5.com/data/media/7/shrek_copy.jpg",
-        "avatar": "https://cdnn11.img.sputnik.by/img/07e4/0c/0e/1046390441_181:0:917:809_1920x0_80_0_0_4f2670a268da0bda918ec2340cf6989e.png",
-        "likes": "1643",
-        "description": "What the f*8ck is this??????",
-        "tags": [
-            "shrek1",
-            "shrek2",
-            "shrekislove",
-            "shrekislife",
-            "mynameisShrek"
-        ],
-        "id": 4874128974
-    },
-    {
-        "name": "Stanislav",
-        "image": "https://pbs.twimg.com/media/EGtD5DwX0AEnB9E?format=png&name=small",
-        "avatar": "https://ak.picdn.net/shutterstock/videos/1013501468/thumb/1.jpg?ip=x480",
-        "likes": "69",
-        "description": "Just enjoying life",
-        "tags": [
-            "bruh",
-            "memes",
-            ":)"
-        ],
-        "id": 3581894128
-    },
-    {
-        "name": "Sonic The Hedgehog",
-        "image": "https://dx35vtwkllhj9.cloudfront.net/paramountpictures/sonic-the-hedgehog-2/images/regions/us/onesheet.jpg",
-        "avatar": "https://yt3.ggpht.com/ytc/AKedOLQJCe9G7eXi7FxI0ApC4woWQPVDGlhcK6kPA1USJw=s900-c-k-c0x00ffffff-no-rj",
-        "likes": "412125",
-        "description": "Fun fact: I've commited many warcrimes nobody even knows about!",
-        "tags": [
-            "Sonic",
-            "Bluehedgehog",
-            "Sonic2TheMovie",
-            "BringBackSonic"
-        ],
-        "id": 3581894855
-    },
-    {
-        "name": "Tails",
-        "image": "https://cdn.vox-cdn.com/thumbor/JWTfewlQZFZzz1_zed6zkNR91WU=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23071230/tails_movie.jpeg",
-        "avatar": "https://i.pinimg.com/originals/c8/af/8b/c8af8b5b37ae04e39f74441ff053d8a0.jpg",
-        "likes": "2",
-        "description": "Guys! I'm starring in a new Sonic 2 movie!!! Also: Sonic says he hates Jews?!",
-        "tags": [
-            "Sonic",
-            "Tails",
-            "SonicAndTails",
-            "YellowFurryDude"
-        ],
-        "id": 3581894872
-    },
-    {
-        "name": "Hidetaka Miyazaki",
-        "image": "https://upload.wikimedia.org/wikipedia/ru/7/7c/Elden_Ring_-_cover.jpg",
-        "avatar": "https://www.videogameschronicle.com/files/2019/03/Miyazaki-Photo.jpg",
-        "likes": "241124",
-        "description": "Bro this game is gonna be fire, im telling ya!!!",
-        "tags": [
-            "Eldenring",
-            "Darksouls",
-            "Imtoofu**ingoldforthis"
-        ],
-        "id": 1231312344
-    },
-    {
-        "name": "Doge",
-        "image": "https://forklog.com/wp-content/uploads/Doge_3-min.png",
-        "avatar": "https://cs11.pikabu.ru/post_img/2019/10/16/10/1571246121185355429.jpg",
-        "likes": "6849032976894738793",
-        "description": "Minting my own coin, i love crypto!",
-        "tags": [
-            "cryptobros",
-            "cryptoisthebest",
-            "doge",
-            "dogecoin"
-        ],
-        "id": 1812391287
-    }
+  {
+    "name": "Ryan",
+    "image": "https://screenqueens.files.wordpress.com/2018/08/big_1524267842_image.jpg",
+    "avatar": "https://www.soyuz.ru/public/uploads/files/2/7113247/20170810090017e9ea62cca9.jpg",
+    "likes": "3",
+    "description": "...",
+    "tags": ["test", "hello-world", "mynameisRyan"],
+    "id": 7328727878
+  },
+  {
+    "name": "Shrek",
+    "image": "http://www.bryce5.com/data/media/7/shrek_copy.jpg",
+    "avatar": "https://cdnn11.img.sputnik.by/img/07e4/0c/0e/1046390441_181:0:917:809_1920x0_80_0_0_4f2670a268da0bda918ec2340cf6989e.png",
+    "likes": "1643",
+    "description": "What the f*8ck is this??????",
+    "tags": ["shrek1", "shrek2", "shrekislove", "shrekislife", "mynameisShrek"],
+    "id": 4874128974
+  },
+  {
+    "name": "Stanislav",
+    "image": "https://pbs.twimg.com/media/EGtD5DwX0AEnB9E?format=png&name=small",
+    "avatar": "https://ak.picdn.net/shutterstock/videos/1013501468/thumb/1.jpg?ip=x480",
+    "likes": "69",
+    "description": "Just enjoying life",
+    "tags": ["bruh", "memes", ":)"],
+    "id": 3581894128
+  },
+  {
+    "name": "Sonic The Hedgehog",
+    "image": "https://dx35vtwkllhj9.cloudfront.net/paramountpictures/sonic-the-hedgehog-2/images/regions/us/onesheet.jpg",
+    "avatar": "https://yt3.ggpht.com/ytc/AKedOLQJCe9G7eXi7FxI0ApC4woWQPVDGlhcK6kPA1USJw=s900-c-k-c0x00ffffff-no-rj",
+    "likes": "412125",
+    "description": "Fun fact: I've commited many warcrimes nobody even knows about!",
+    "tags": ["Sonic", "Bluehedgehog", "Sonic2TheMovie", "BringBackSonic"],
+    "id": 3581894855
+  },
+  {
+    "name": "Tails",
+    "image": "https://cdn.vox-cdn.com/thumbor/JWTfewlQZFZzz1_zed6zkNR91WU=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23071230/tails_movie.jpeg",
+    "avatar": "https://i.pinimg.com/originals/c8/af/8b/c8af8b5b37ae04e39f74441ff053d8a0.jpg",
+    "likes": "2",
+    "description": "Guys! I'm starring in a new Sonic 2 movie!!! Also: Sonic says he hates Jews?!",
+    "tags": ["Sonic", "Tails", "SonicAndTails", "YellowFurryDude"],
+    "id": 3581894872
+  },
+  {
+    "name": "Hidetaka Miyazaki",
+    "image": "https://upload.wikimedia.org/wikipedia/ru/7/7c/Elden_Ring_-_cover.jpg",
+    "avatar": "https://www.videogameschronicle.com/files/2019/03/Miyazaki-Photo.jpg",
+    "likes": "241124",
+    "description": "Bro this game is gonna be fire, im telling ya!!!",
+    "tags": ["Eldenring", "Darksouls", "Imtoofu**ingoldforthis"],
+    "id": 1231312344
+  },
+  {
+    "name": "Doge",
+    "image": "https://forklog.com/wp-content/uploads/Doge_3-min.png",
+    "avatar": "https://cs11.pikabu.ru/post_img/2019/10/16/10/1571246121185355429.jpg",
+    "likes": "6849032976894738793",
+    "description": "Minting my own coin, i love crypto!",
+    "tags": ["cryptobros", "cryptoisthebest", "doge", "dogecoin"],
+    "id": 1812391287
+  }
 ]

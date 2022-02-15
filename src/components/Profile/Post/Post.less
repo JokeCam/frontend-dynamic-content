@@ -1,66 +1,66 @@
 @import url("../../../common/color.less");
 
 .post {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  &__overlay {
+    z-index: 10;
+    display: flex;
+    position: absolute;
     width: 300px;
     height: 300px;
-    overflow: hidden;
-    display: flex;
+    cursor: pointer;
     justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    opacity: 0;
+    background-color: @black-transparent;
 
-    &__overlay {
-        z-index: 10;
-        display: flex;
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        cursor: pointer;
-        justify-content: center;
-        align-items: center;
-        column-gap: 30px;
-        opacity: 0;
-        background-color: @black-transparent;
-
-        &:hover {
-            opacity: 1;
-        }
+    &:hover {
+      opacity: 1;
     }
+  }
 
-    &__overlay-container {
-        display: flex;
-        align-items: center;
+  &__overlay-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__overlay-like-icon {
+    background-image: url("../../../images/like-icon-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 26px;
+    height: 26px;
+  }
+
+  &__overlay-like-span {
+    color: @white;
+  }
+
+  &__overlay-comment-icon {
+    background-image: url("../../../images/comment-icon-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__overlay-comment-span {
+    color: @white;
+  }
+
+  &__image {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+
+    &_murk {
+      filter: brightness(40%);
     }
-
-    &__overlay-like-icon {
-        background-image: url("../../../images/like-icon-white.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 26px;
-        height: 26px;
-    }
-
-    &__overlay-like-span {
-        color: @white;
-    }
-
-    &__overlay-comment-icon {
-        background-image: url("../../../images/comment-icon-white.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 32px;
-        height: 32px;
-    }
-
-    &__overlay-comment-span {
-        color: @white;
-    }
-
-    &__image {
-        min-width: 100%;
-        min-height: 100%;
-        object-fit: cover;
-
-        &_murk {
-            filter: brightness(40%);
-        }
-    }
+  }
 }

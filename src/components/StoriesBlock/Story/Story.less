@@ -1,24 +1,24 @@
 .story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image-container {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    // align-items: center;
+  }
 
-    &__image-container {
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        // align-items: center;
-    }
+  &__image {
+    min-height: 120%;
+  }
 
-    &__image {
-        min-height: 120%;
-    }
-
-    &__name {
-        margin: 5px 0 0;
-        font-family: NotoSans-Bold, apple-system, BlinkMacSystemFont, sans-serif;;
-    }
+  &__name {
+    margin: 5px 0 0;
+    font-family: NotoSans-Bold, apple-system, BlinkMacSystemFont, sans-serif;
+  }
 }

@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './Card.less';
+import "./Card.less";
 
 function Card(props) {
   return (
@@ -20,11 +20,13 @@ function Card(props) {
         <p className="card__name">{props.data.name}</p>
         <p className="card__caption">{props.data.description}</p>
         <div className="card__tags-container">
-          {
-            props.data.tags.map((tag, index) => {
-              return <p className="card__tag" key={index}>#{tag}</p>;
-            })
-          }
+          {props.data.tags.map((tag, index) => {
+            return (
+              <p className="card__tag" key={index}>
+                #{tag}
+              </p>
+            );
+          })}
         </div>
       </div>
     </div>
