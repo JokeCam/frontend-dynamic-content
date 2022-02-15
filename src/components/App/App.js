@@ -1,9 +1,9 @@
 import React from 'react';
 
-import {Routes, Route} from 'react-router-dom';
-import {service} from './service/service';
-import {useEffect, useState} from 'react';
-import {CurrentUserContext} from '../../contexts/CurrentUserContext';
+import { Routes, Route } from 'react-router-dom';
+import { service } from './service/service';
+import { useEffect, useState } from 'react';
+import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 
 import Header from '../Header/Header';
 import Profile from '../Profile/Profile';
@@ -11,7 +11,6 @@ import Profile from '../Profile/Profile';
 import CardPage from '../CardPage/CardPage';
 
 import './App.less';
-
 
 function App() {
   const [currentUser, setCurrentUser] = useState({});
@@ -23,28 +22,27 @@ function App() {
   async function fetchUser() {
     const fetchedCurrentUser = await service.fetchCurrentUser();
     setCurrentUser(fetchedCurrentUser);
-  };
+  }
 
   return (
     <div className="app">
       <CurrentUserContext.Provider value={currentUser}>
         <Header />
         <Routes>
-          <Route path="/" element={
-            <>
-              {/* <StoriesBlock /> */}
-              <CardPage />
-            </>
-          }
+          <Route
+            path="/"
+            element={
+              <>
+                {/* <StoriesBlock /> */}
+                <CardPage />
+              </>
+            }
           />
-          <Route path="profile" element={
-            <Profile />
-          }
-          />
+          <Route path="profile" element={<Profile />} />
         </Routes>
       </CurrentUserContext.Provider>
     </div>
   );
-};
+}
 
 export default App;

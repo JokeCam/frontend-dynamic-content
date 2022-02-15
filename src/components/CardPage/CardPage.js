@@ -2,8 +2,8 @@ import React from 'react';
 
 import SearchBar from './SearchBar/SearchBar';
 import Card from './Card/Card';
-import {service} from './service/cardsService';
-import {useState, useEffect} from 'react';
+import { service } from './service/cardsService';
+import { useState, useEffect } from 'react';
 
 import './CardPage.less';
 
@@ -61,7 +61,7 @@ function CardPage() {
     return displayedCards.map((elem) => {
       return <Card data={elem} key={elem.id} />;
     });
-  };
+  }
 
   return (
     <div className="card-page">
@@ -69,11 +69,9 @@ function CardPage() {
         searchInputValue={searchInputValue}
         setSearchInputValue={setSearchInputValue}
       />
-      {
-        handleCardsDisplay()
-      }
+      {handleCardsDisplay()}
     </div>
   );
-};
+}
 
 export default CardPage;

@@ -1,8 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
-import {Link, useLocation} from 'react-router-dom';
-import {useState, useContext, useEffect} from 'react';
-import {CurrentUserContext} from '../../contexts/CurrentUserContext';
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useContext, useEffect } from 'react';
+import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 
 import './Header.less';
 
@@ -25,34 +25,34 @@ function Header() {
   });
 
   const homeButtonClass = classnames(
-      'header__menu-button',
-      'header__menu-button_home',
-      {
-        'header__menu-button_home-active': isHomeButtonActive,
-      },
+    'header__menu-button',
+    'header__menu-button_home',
+    {
+      'header__menu-button_home-active': isHomeButtonActive,
+    }
   );
 
   const profileButtonClass = classnames(
-      'header__menu-button',
-      'header__menu-button_profile',
-      {
-        'header__menu-button_profile-active': isProfileButtonActive,
-      },
+    'header__menu-button',
+    'header__menu-button_profile',
+    {
+      'header__menu-button_profile-active': isProfileButtonActive,
+    }
   );
 
   function handleHomeClick() {
     if (!isHomeButtonActive) {
       setIsProfileButtonActive(false);
       setIsHomeButtonActive(true);
-    };
-  };
+    }
+  }
 
   function handleProfileClick() {
     if (!isProfileButtonActive) {
       setIsHomeButtonActive(false);
       setIsProfileButtonActive(true);
-    };
-  };
+    }
+  }
 
   return (
     <header className="header">
@@ -75,6 +75,6 @@ function Header() {
       </div>
     </header>
   );
-};
+}
 
 export default Header;
