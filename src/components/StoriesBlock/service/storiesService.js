@@ -1,4 +1,4 @@
-import storiesData from './stories.mock.json';
+import storiesData from "./stories.mock.json";
 
 export const service = {
   fetchStories: () => {

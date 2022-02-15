@@ -1,4 +1,4 @@
-import cardData from './cards.mock.json';
+import cardData from "./cards.mock.json";
 
 export const service = {
   fetchCards: () => {

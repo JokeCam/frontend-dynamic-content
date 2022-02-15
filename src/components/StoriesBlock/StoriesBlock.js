@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import { useState, useEffect } from 'react';
-import { service } from './service/storiesService';
-import Story from './Story/Story';
+import { useState, useEffect } from "react";
+import { service } from "./service/storiesService";
+import Story from "./Story/Story";
 
-import './StoriesBlock.less';
+import "./StoriesBlock.less";
 
 function StoriesBlock() {
   const [stories, setStories] = useState([]);

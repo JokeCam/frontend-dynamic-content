@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { CurrentUserContext } from '../../contexts/CurrentUserContext';
-import { useContext } from 'react';
-import Post from './Post/Post';
-import './Profile.less';
+import { CurrentUserContext } from "../../contexts/CurrentUserContext";
+import { useContext } from "react";
+import Post from "./Post/Post";
+import "./Profile.less";
 
 function Profile() {
   const userContext = useContext(CurrentUserContext);
