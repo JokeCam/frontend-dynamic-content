@@ -20,31 +20,8 @@ function CardPage() {
     if (!searchInputValue) {
       getCards();
     };
-
-    const filteredCards = cards.filter((elem) => {
-      if (searchInputValue[0] === '#') {
-        const tagsArr = elem.tags.filter((tag) => {
-          return tag
-              .toLowerCase()
-              .includes(
-                  searchInputValue
-                      .slice(1)
-                      .toLowerCase(),
-              );
-        });
-
-        return tagsArr.length > 0;
-      } else {
-        return elem.description.
-            toLowerCase()
-            .includes(
-                searchInputValue
-                    .toLowerCase(),
-            );
-      };
-    });
-
-    setDisplayedCards(filteredCards);
+    
+    setDisplayedCards(filterCards());
   }, [searchInputValue]);
 
   async function getCards() {
@@ -52,6 +29,33 @@ function CardPage() {
     setDisplayedCards(fetchedCards);
     setCards(fetchedCards);
   };
+  
+  function filterCards() {
+    const filteredCards = cards.filter((elem) => {
+          if (searchInputValue[0] === '#') {
+            const tagsArr = elem.tags.filter((tag) => {
+              return tag
+                  .toLowerCase()
+                  .includes(
+                      searchInputValue
+                          .slice(1)
+                          .toLowerCase(),
+                  );
+            });
+
+            return tagsArr.length > 0;
+          } else {
+            return elem.description.
+                toLowerCase()
+                .includes(
+                    searchInputValue
+                        .toLowerCase(),
+                );
+          };
+     });
+    
+    return filteredCards
+  }
 
   function handleCardsDisplay() {
     return displayedCards.map((elem) => {
