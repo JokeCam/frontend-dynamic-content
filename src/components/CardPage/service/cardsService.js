@@ -1,10 +1,10 @@
 import cardData from './cards.mock.json';
 
 export const service = {
-  fetchCards: () => {
+  fetchCards: (page) => {
     return new Promise(function (resolve) {
       setTimeout(() => {
-        resolve(cardData);
+        resolve(cardData[page]);
       }, 500);
     });
   },
